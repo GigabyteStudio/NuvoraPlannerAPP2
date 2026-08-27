@@ -1,0 +1,212 @@
+<aside class="sidebar">
+
+    <div class="sidebar-header">
+
+        <a href="/dashboard" class="sidebar-brand">
+
+            <div class="sidebar-brand-placeholder">
+                <strong>Nuvora</strong>
+                <span>Planner</span>
+            </div>
+
+            <div class="sidebar-brand-mini">
+                N
+            </div>
+
+        </a>
+
+        <button type="button" class="sidebar-toggle" id="sidebarToggle" aria-label="Recolher menu">
+
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M15 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+
+        </button>
+
+    </div>
+
+    <nav class="sidebar-navigation">
+
+        <!-- INÍCIO -->
+
+        <a href="/dashboard" class="sidebar-link <%= activePage === 'inicio' ? 'active' : '' %>">
+            <span class="sidebar-icon">
+
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M3 11.5 12 4l9 7.5" fill="none" stroke="currentColor" stroke-width="1.8"
+                        stroke-linecap="round" stroke-linejoin="round" />
+
+                    <path d="M5.5 10v10h13V10M9.5 20v-6h5v6" fill="none" stroke="currentColor" stroke-width="1.8"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+            </span>
+
+            <span>Início</span>
+        </a>
+
+
+        <!-- DASHBOARD -->
+
+        <div class="sidebar-group">
+
+            <div class="sidebar-group-title">
+
+                <span class="sidebar-icon">
+
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+
+                        <rect x="3" y="3" width="7" height="7" rx="1.5" fill="none" stroke="currentColor"
+                            stroke-width="1.8" />
+
+                        <rect x="14" y="3" width="7" height="7" rx="1.5" fill="none" stroke="currentColor"
+                            stroke-width="1.8" />
+
+                        <rect x="3" y="14" width="7" height="7" rx="1.5" fill="none" stroke="currentColor"
+                            stroke-width="1.8" />
+
+                        <rect x="14" y="14" width="7" height="7" rx="1.5" fill="none" stroke="currentColor"
+                            stroke-width="1.8" />
+
+                    </svg>
+
+                </span>
+
+                <span>Dashboard</span>
+
+            </div>
+
+            <div class="sidebar-submenu">
+
+                <a href="/balanco" class="<%= activePage === 'balanco' ? 'active' : '' %>">
+                    Balanço Mensal
+                </a>
+
+                <a href="/metas" class="<%= activePage === 'metas' ? 'active' : '' %>">
+                    Planos e Metas
+                </a>
+
+                <a href="/investimentos" class="<%= activePage === 'investimentos' ? 'active' : '' %>">
+                    Investimentos
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- CONTROLE FINANCEIRO -->
+
+        <div class="sidebar-group">
+
+            <div class="sidebar-group-title">
+
+                <span class="sidebar-icon">
+
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+
+                        <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8" />
+
+                        <path
+                            d="M15.5 8.5c-.8-.7-2-1.1-3.3-1.1-1.8 0-3.2.9-3.2 2.3 0 1.3 1.1 1.9 3.2 2.4 2 .5 3.1 1.1 3.1 2.5 0 1.5-1.4 2.5-3.4 2.5-1.5 0-2.8-.5-3.7-1.4"
+                            fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+
+                        <path d="M12 5.5v13" fill="none" stroke="currentColor" stroke-width="1.6"
+                            stroke-linecap="round" />
+
+                    </svg>
+
+                </span>
+
+                <span>Controle Financeiro</span>
+
+            </div>
+
+            <div class="sidebar-submenu">
+
+                <a href="/planejamento" class="<%= activePage === 'planejamento' ? 'active' : '' %>">
+                    Planejamento e Controle
+                </a>
+
+                <a href="/lancamentos" class="<%= activePage === 'lancamentos' ? 'active' : '' %>">
+                    Lançamentos
+                </a>
+
+                <a href="/analises" class="<%= activePage === 'analises' ? 'active' : '' %>">
+                    Análises
+                </a>
+
+                <a href="/pendencias" class="<%= activePage === 'pendencias' ? 'active' : '' %>">
+                    Pendências
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- GESTÃO DE OBJETIVOS -->
+
+        <div class="sidebar-group">
+
+            <div class="sidebar-group-title">
+
+                <span class="sidebar-icon">
+
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+
+                        <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8" />
+
+                        <circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="1.8" />
+
+                        <circle cx="12" cy="12" r="1.5" fill="currentColor" />
+
+                    </svg>
+
+                </span>
+
+                <span>Gestão de Objetivos</span>
+
+            </div>
+
+            <div class="sidebar-submenu">
+
+                <a href="/planos" class="<%= activePage === 'planos' ? 'active' : '' %>">
+                    Meus Planos
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- INVESTIMENTOS -->
+
+        <div class="sidebar-group">
+
+            <div class="sidebar-group-title">
+
+                <span class="sidebar-icon">
+
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+
+                        <path d="M4 17l5-5 4 3 7-8" fill="none" stroke="currentColor" stroke-width="1.8"
+                            stroke-linecap="round" stroke-linejoin="round" />
+
+                        <path d="M15 7h5v5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                            stroke-linejoin="round" />
+
+                    </svg>
+
+                </span>
+
+                <span>Investimentos</span>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+</aside>
