@@ -64,9 +64,9 @@
     align-items: center;
     justify-content: space-between;
 
-    gap: 12px;
+    gap: 10px;
 
-    padding: 22px 18px 22px 24px;
+    padding: 18px 14px 18px 20px;
 
     border-bottom: 1px solid var(--border);
 
@@ -85,55 +85,20 @@
     align-items: center;
 }
 
-.sidebar-brand-placeholder {
+.sidebar-brand {
+    min-width: 0;
+
     display: flex;
-    align-items: baseline;
-
-    gap: 6px;
-
-    line-height: 1;
-}
-
-.sidebar-brand-placeholder strong {
-    color: var(--text);
-
-    font-size: 26px;
-    font-weight: 800;
-
-    letter-spacing: -1.5px;
-}
-
-.sidebar-brand-placeholder span {
-    color: var(--primary-light);
-
-    font-size: 14px;
-    font-weight: 700;
-}
-
-
-/* Mantido para uso futuro com logo reduzida */
-
-.sidebar-brand-mini {
-    display: none;
-
-    width: 38px;
-    height: 38px;
-
     align-items: center;
-    justify-content: center;
+}
 
-    border-radius: 10px;
+.sidebar-logo {
+    display: block;
 
-    background:
-        linear-gradient(135deg,
-            var(--primary-light),
-            var(--primary),
-            var(--secondary));
+    height: 60px;
+    width: auto;
 
-    color: white;
-
-    font-size: 20px;
-    font-weight: 900;
+    object-fit: contain;
 }
 
 

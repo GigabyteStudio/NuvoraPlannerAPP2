@@ -33,8 +33,19 @@
 }
 
 /* =========================
-   BRAND
+   LOGO
 ========================= */
+
+.login-logo {
+    display: block;
+
+    width: 245px;
+    height: 245px;
+
+    margin: 0 auto;
+
+    object-fit: contain;
+}
 
 .login-brand {
     position: relative;
@@ -52,6 +63,10 @@
             var(--primary),
             var(--primary-dark));
 }
+
+/* =========================
+   BRAND
+========================= */
 
 .login-brand::before {
     content: "";
@@ -91,6 +106,8 @@
     z-index: 1;
 
     text-align: center;
+
+    transform: translateY(12px);
 }
 
 .brand-logo {
@@ -116,9 +133,9 @@
 }
 
 .brand-content p {
-    max-width: 280px;
+    max-width: 300px;
 
-    margin-top: 30px;
+    margin: 14px auto 0;
 
     color: rgba(255, 255, 255, 0.82);
 
